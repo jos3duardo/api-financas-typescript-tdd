@@ -1,0 +1,17 @@
+{
+  "name": "api-rest-sistema-financas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/** test/** --fix"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0"
+  },
+  "dependencies": {
+    "jest": "23.6.0"
+  }
+}
