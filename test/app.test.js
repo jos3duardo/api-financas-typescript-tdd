@@ -1,6 +1,8 @@
-const supertest = require('supertest')
-const request = supertest('http://localhost:3001');
-
+const request = require('supertest')
+const app = require('../src/app')
 test('Deve responder na porta 3001', () => {
-    request.get('/').then((res => expect(res.status).toBe(200)));
-})
+    return request(app).get('/')
+        .then((res) => {
+            expect(res.status).toBe(200)
+        });
+    })
