@@ -4,5 +4,8 @@
     },
     "extends": [
         "airbnb-base"
-    ]
+    ],
+    "rules": {
+        "arrow-body-style": "off"
+    }
 }
