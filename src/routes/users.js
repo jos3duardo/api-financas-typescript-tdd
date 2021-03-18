@@ -1,9 +1,8 @@
 module.exports = () => {
-    const findAll = (req, res) => {
+    const  findAll = (req, res) => {
         const users = [
-            {name: 'Jhon Doe', mail: 'jhon@mail.com'},
+            { name: 'Jhon Doe', mail: 'jhon@mail.com' },
         ];
-
         res.status(200).json(users)
     };
 
@@ -12,4 +11,4 @@ module.exports = () => {
     };
 
     return { findAll, createUser }
-}
+};
